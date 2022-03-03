@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Odin Sign-up Form</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container-left">
@@ -22,40 +23,44 @@
     <div class="content">
       <div class="advertise">
         <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-        <p>Sign up now to get started.</p>
-        <p id="get-line">You know you want to.</p>
+        <p>Sign up <i>now</i> to get started.</p>
+        <p id="get-line">You <i>know</i> you want to.</p>
       </div>
-      <form class="sign-up">
-        <p>Let's do this!</p>
-        <div class="container-input">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name">
+      <p>Let's do this!</p>
+      <form class="sign-up" method="post">
+        <div class="container-info">
+          <div class="container-input">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name">
+          </div>
+          <div class="container-input">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name">
+          </div>
+          <div class="container-input">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+          </div>
+          <div class="container-input">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input type="tel" id="phone-number" pattern="(\d{10})">
+          </div>
+          <div class="container-input" id="container-pwd">
+            <label for="pwd">PASSWORD</label>
+            <input type="password" id="pwd">
+          </div>
+          <div class="container-input">
+            <label for="confirm-pwd">CONFIRM PASSWORD</label>
+            <input type="password" id="confirm-pwd">
+          </div>
         </div>
-        <div class="container-input">
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name">
-        </div>
-        <div class="container-input">
-          <label for="email">EMAIL</label>
-          <input type="email" id="email">
-        </div>
-        <div class="container-input">
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" id="phone-number">
-        </div>
-        <div class="container-input">
-          <label for="pwd">PASSWORD</label>
-          <input type="password" id="pwd">
-        </div>
-        <div class="container-input">
-          <label for="confirm-pwd">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm-pwd">
+
+        <div class="container-login">
+          <button type="submit" id="create-account">Create Account</button>
+          <p id="login">Already have account? <a href="" id="login-link">Log in</a></p>
         </div>
       </form>
-      <div class="container-login">
-        <button id="create-account">Create Account</button>
-        <p>Already have account? Log in</p>
-      </div>
+      
     </div>
   </div>
 </body>

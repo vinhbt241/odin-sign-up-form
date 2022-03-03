@@ -13,8 +13,9 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .container-left {
@@ -30,7 +31,7 @@ body {
 }
 
 .container-right {
-  background-color: grey;
+  background-color: white;
   height: 100%;
   width: 65%;
 }
@@ -62,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .photographer a {
@@ -78,7 +79,7 @@ body {
 }
 
 .advertise {
-  background-color: brown;
+  width: 80%;  
 }
 
 #get-line {
@@ -87,8 +88,81 @@ body {
 }
 
 .sign-up {
-  background-color: red;
+  margin-top: 20px;
+}
 
+.sign-up .container-info {
+  width: 100%;
+  margin-left: -55px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 55px;
+  padding-bottom: 20px;
+  padding-right: 320px;
+  box-shadow: 0 7px 7px -2px #cecbcb;
+
+}
+
+.container-info .container-input {
+  display: flex;
+  justify-content: flex-start;
+  width: 300px;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sign-up .container-info label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  margin-bottom: 2px;
+}
+
+.sign-up .container-info input {
+  width: 200px;
+  border-radius: 3px;
+  border: #e5e7eb 1px solid;
+  font-size: 16px;
+  padding: 0 10px;
+}
+
+.sign-up .container-info input:focus {
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.sign-up .container-info input:invalid:not(:focus) {
+  border: red 1px solid;
+}
+
+.container-login {
+  padding-top: 30px;
+}
+
+#create-account {
+  font-size: 18px;
+  padding: 10px 40px;
+  font-weight: bold;
+  background-color: #596d48;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  margin-bottom: 40px;
+}
+
+#login {
+  font-weight: normal;
+  font-size: 18px;
+}
+
+#login-link {
+  font-weight: bold;
+  color: #596d48;
+  text-decoration: none;
+}
+
+.error {
+  font-size: 12px;
+  font-weight: normal;
+  color: red
 }
 
 
