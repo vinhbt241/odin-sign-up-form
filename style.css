@@ -19,7 +19,7 @@ body {
 }
 
 .container-left {
-  background-image: url("reference/background-img.avif");
+  background-image: url("reference/background-img.png");
   background-size: cover;
   color: white;
   height: 100%;
